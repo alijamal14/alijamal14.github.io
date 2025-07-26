@@ -1,0 +1,47 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://alijamal14.github.io/sitemap.xml
+
+# Crawl delay (optional - in seconds)
+Crawl-delay: 1
+
+# Allow search engines to crawl all files
+Allow: /*.css
+Allow: /*.js
+Allow: /*.pdf
+Allow: /*.jpeg
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.gif
+
+# Disallow sensitive areas (if any)
+# Disallow: /private/
+
+# Allow Googlebot specifically
+User-agent: Googlebot
+Allow: /
+
+# Allow Bingbot
+User-agent: Bingbot
+Allow: /
+
+# Allow ChatGPT and other AI crawlers
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Applebot
+Allow: /

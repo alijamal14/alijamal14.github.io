@@ -1,0 +1,50 @@
+# Ali Jamal - Senior .NET Consultant & DevOps Engineer
+
+## About
+Ali Jamal is a Senior .NET Consultant and DevOps Engineer with over 10 years of experience in healthcare, government, and e-commerce systems.
+
+## Contact
+- **Email**: alijamal14@live.com
+- **Phone**: +92 316 9218003
+- **Location**: Islamabad, Pakistan
+- **LinkedIn**: https://linkedin.com/in/alijamal14
+- **GitHub**: https://github.com/alijamal14
+- **Website**: https://alijamal14.github.io
+
+## Expertise
+- .NET Framework & .NET Core
+- ASP.NET MVC/Core
+- C# Programming
+- Microsoft Azure
+- Amazon Web Services (AWS)
+- DevOps & CI/CD
+- Healthcare Systems (HIPAA, HL7/FHIR)
+- Microsoft Dynamics CRM
+- Docker & Containerization
+
+## Experience Highlights
+- **MazikCare (My Clinic)** - Lead Full Stack Consultant (2021-Present)
+- **CEMIC (Compass Digital)** - DevOps Engineer Consultant (2020-2025)
+- **Birmingham Guardian** - Full Stack Consultant (2022)
+- **ihealthCure** - Senior Software Engineer (2015-2019)
+
+## Education
+- Bachelor of Science in Computer Science (Hons.), FAST-NUCES, Islamabad (2014)
+
+## Key Achievements
+- Improved system stability by 90% in clinical systems
+- Optimized API performance by over 70%
+- Reduced deployment times by 40% through CI/CD optimization
+- Built 15+ healthcare modules with 24/7 uptime
+- Implemented HIPAA-compliant systems with HL7/FHIR integration
+
+## Services Offered
+- .NET Development & Consulting
+- DevOps Implementation
+- Healthcare Systems Development
+- Cloud Architecture (Azure/AWS)
+- System Modernization & Migration
+- Performance Optimization
+
+---
+*Last updated: July 27, 2025*
