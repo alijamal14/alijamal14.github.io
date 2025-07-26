@@ -192,6 +192,14 @@ body {
     color: #fbbf24;
 }
 
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+}
+
 /* Section Styles */
 section {
     padding: 100px 0;
