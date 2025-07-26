@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Typing effect for hero title
     const heroTitle = document.querySelector('.hero-title');
-    const titleText = heroTitle.innerHTML;
+    const titleText = heroTitle.textContent; // Get text content instead of innerHTML
     
     function typeWriter(text, element, speed = 100) {
         element.innerHTML = '';
@@ -159,7 +159,29 @@ document.addEventListener('DOMContentLoaded', function() {
         
         function type() {
             if (i < text.length) {
-                element.innerHTML += text.charAt(i);
+                // Build the text with proper HTML structure
+                const typedText = text.substring(0, i + 1);
+                const remainingText = text.substring(i + 1);
+                
+                // Find where "Ali Jamal" starts to apply highlight
+                const aliIndex = text.indexOf('Ali Jamal');
+                if (i + 1 > aliIndex && aliIndex !== -1) {
+                    const beforeAli = text.substring(0, aliIndex);
+                    const aliPart = text.substring(aliIndex, Math.min(aliIndex + 9, i + 1)); // "Ali Jamal" is 9 characters
+                    const afterAli = text.substring(Math.min(aliIndex + 9, i + 1), i + 1);
+                    
+                    if (i + 1 >= aliIndex + 9) {
+                        // Complete "Ali Jamal" has been typed
+                        element.innerHTML = beforeAli + '<span class="highlight">Ali Jamal</span>' + text.substring(aliIndex + 9, i + 1);
+                    } else {
+                        // Typing within "Ali Jamal"
+                        element.innerHTML = beforeAli + '<span class="highlight">' + aliPart + '</span>';
+                    }
+                } else {
+                    // Haven't reached "Ali Jamal" yet
+                    element.innerHTML = typedText;
+                }
+                
                 i++;
                 setTimeout(type, speed);
             }
