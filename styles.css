@@ -386,6 +386,59 @@ section {
     line-height: 1.6;
 }
 
+/* Projects Section */
+.projects {
+    background-color: #f9fafb;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+.project-card p {
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-tag {
+    background-color: #dbeafe;
+    color: #1e40af;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
 /* Contact Section */
 .contact-content {
     display: grid;
@@ -414,11 +467,32 @@ section {
     gap: 1rem;
     font-size: 1rem;
     color: #374151;
+    margin-bottom: 0.5rem;
 }
 
 .contact-method i {
     color: #2563eb;
     width: 20px;
+}
+
+.contact-method a {
+    color: #374151;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-method a:hover {
+    color: #2563eb;
+}
+
+.resume-download {
+    margin-top: 2rem;
+}
+
+.resume-download .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .contact-form {

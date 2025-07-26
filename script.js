@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
 
     // Observe elements for animation
-    const animateElements = document.querySelectorAll('.skill-category, .timeline-item, .about-stats .stat');
+    const animateElements = document.querySelectorAll('.skill-category, .timeline-item, .about-stats .stat, .project-card');
     animateElements.forEach(el => {
         observer.observe(el);
     });
@@ -238,7 +238,8 @@ const style = document.createElement('style');
 style.textContent = `
     .skill-category,
     .timeline-item,
-    .about-stats .stat {
+    .about-stats .stat,
+    .project-card {
         opacity: 0;
         transform: translateY(30px);
         transition: opacity 0.6s ease, transform 0.6s ease;
@@ -246,7 +247,8 @@ style.textContent = `
 
     .skill-category.animate-in,
     .timeline-item.animate-in,
-    .about-stats .stat.animate-in {
+    .about-stats .stat.animate-in,
+    .project-card.animate-in {
         opacity: 1;
         transform: translateY(0);
     }
