@@ -1,0 +1,5 @@
+name = "alijamal14-portfolio"
+compatibility_date = "2025-07-27"
+
+[assets]
+directory = "."

@@ -1,0 +1,21 @@
+{
+  "name": "alijamal14-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for Ali Jamal",
+  "scripts": {
+    "deploy:cloudflare": "npx wrangler deploy",
+    "deploy:cloudflare-dry": "npx wrangler deploy --dry-run",
+    "preview": "npx wrangler pages dev .",
+    "start": "python3 -m http.server 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alijamal14/alijamal14.github.io"
+  },
+  "keywords": ["portfolio", "static-site", "resume"],
+  "author": "Ali Jamal <alijamal14@live.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
